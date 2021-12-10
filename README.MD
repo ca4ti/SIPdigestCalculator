@@ -6,12 +6,19 @@ SIPdigestcalculator.exe -u username -r realm -p password -n nonce -cn client non
 
 
 wget https://raw.githubusercontent.com/OlegPowerC/SIPdigestCalculator/master/SIPdigestcalculator.go
+
 wget https://golang.org/dl/go1.17.linux-amd64.tar.gz
+
 sudo tar -zxvf go1.17.linux-amd64.tar.gz -C /usr/local/
+
 echo "export PATH=/usr/local/go/bin:${PATH}" | sudo tee /etc/profile.d/go.sh
+
 source /etc/profile.d/go.sh
+
 echo "export PATH=/usr/local/go/bin:${PATH}" | sudo tee -a $HOME/.profile
+
 source $HOME/.profile
+
 go version
 
 
